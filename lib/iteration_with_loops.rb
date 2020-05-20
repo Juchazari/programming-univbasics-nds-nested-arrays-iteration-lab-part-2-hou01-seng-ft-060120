@@ -14,10 +14,11 @@ def find_min_in_nested_arrays(src)
       
       if smallest_number > src[count][inner_count]
         smallest_number = src[count][inner_count]
-        smallest_in_each << smallest_number
       end
       
+      smallest_in_each << smallest_number
       inner_count += 1
+      
     end
     
     count += 1
