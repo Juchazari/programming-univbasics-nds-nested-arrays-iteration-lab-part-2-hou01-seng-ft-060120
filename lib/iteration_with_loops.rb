@@ -8,16 +8,10 @@ def find_min_in_nested_arrays(src)
   while count < src.length do
     
     inner_count = 0
-    smallest_number = 10 ** 10
     
     while inner_count < src[count].length do
       
-      if smallest_number > src[count][inner_count]
-        smallest_number = src[count][inner_count]
-      end
-      
-      smallest_in_each << smallest_number
-      inner_count += 1
+      smallest_number = src[count][inner_count]
       
     end
     count += 1
